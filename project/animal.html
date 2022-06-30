@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Endangered Animals</title>
+    <link rel="stylesheet" type="text/css" href="animal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header id="header">
+     <p  class="logo"><b>حيوانات</b></p>
+
+         <ul >
+
+             <li><a href="#" class="active">الصفحة الرئيسية</a></li>
+
+             <li><a href="#">حول</a></li>
+
+             <li><a href="#">الحيوانات</a></li>
+
+             <li><a href="#">التبرع </a></li>
+
+             <li><a href="#">اتصل بنا</a></li>
+
+         </ul>
+
+ </header>
+<section>
+    <h2 id="text"><span>it's time for a new </span><br> Animals</h2>
+    <img src="img/bird1.png" id="bird1">
+
+    <img src="img/bird2.png" id="bird2">
+    <img src="img/forest.png" id="forest">
+
+<a href="#" id="btn">انضم لنا</a>
+    <img src="img/rocks.png" id="rocks">
+    <img src="img/water.png" id="water">
+
+</section>
+<div class="sec">
+    <h2>Manar</h2>
+    <p>فلسطين ( باليونانية: Παλαιστίνη) هي المنطقة الجغرافية الواقعة جنوب شرق البحر المتوسط حتى وادي الأردن، وفي بعض التعاريف، يمتد التعريف ليشمل مناطق شرق نهر الأردن، تقع في غرب آسيا وتصل بشمالي أفريقيا بوقوعها وشبه جزيرة سيناء عند نقطة التقاء القارتين، مكونة الجزء الجنوبي الغربي من بلاد الشام المتصل بمصر؛ فكانت نقطة عبور وتقاطع للثقافات والتجارة والسياسة بالإضافة إلى مركزيتها في تاريخ الأديان، ولذلك لكثير من مدنها أهمية تاريخية أو دينية، وعلى رأسها القدس. تقوم على حدود المنطقة التاريخية اليوم عدّة كيانات سياسية متراكبة: دولة إسرائيل (التي اُقيمت في حرب 1948 بعد تهجير مئات الآف الفلسطينيين من وطنهم) والضفة الغربية وقطاع غزة التي احتلتها إسرائيل في حرب عام 1967. إلى جانب السيطرة العسكرية الإسرائيلية على عموم الضفة يخضع سكان مدن المناطق المحتلة لسلطة حكم ذاتي فلسطينية تدير الشؤون المدنية للسكان منذ عام 1994 بناء على اتفاقيات أوسلو، بالإضافة إلى خضوع قطاع غزة بالكامل للسلطة الوطنية الفلسطينية منذ انسحاب إسرائيل من قطاع غزة عام 2005. في عام 2007، أدى انقسام السلطة السياسية في مناطق الحكم الذاتي إلى نشوء سلطة في قطاع غزة وأخرى في مدن الضفة. يُقدر عدد السكان ضمن هذه الحدود ب 11.900.000 نسمة تقريباً، حيث أن جزءًا كبيرًا من سكان فلسطين التاريخية اليوم هم من الناطقين بالعربية (المسلمون والمسيحيون)، أما الجزء الآخر من سكانها فهم من الناطقين بالعبرية وأتباع الديانة اليهودية المهاجرين وأبناء شعوب أخرى، وتبلغ نسبتهم اليوم 49% بينما يشكل العرب 46%</p>
+</div>
+<script type="text/javascript">
+    let text=document.getElementById('text');
+    let bird1=document.getElementById('bird1');
+    let bird2=document.getElementById('bird2');
+    let btn= document.getElementById('btn');
+    let rocks=document.getElementById('rocks');
+    let forest=document.getElementById('forest');
+    let water=document.getElementById('water');
+    let header=document.getElementById('header');
+    window.addEventListener('scroll', function(){
+    let value=window.scrollY;
+    text.style.top=50+value*-0.5+'%';
+    bird1.style.top=value*-1.5+'px';
+    bird1.style.left=value*2+'px';
+    bird2.style.top=value*-1.5+'px';
+    bird2.style.left=value*-5+'px';
+    btn.style.marginTop=value*1.5+'px';
+    rocks.style.top=value*-0.12+'px';
+    forest.style.top=value*0.25+'px';
+    header.style.top=value*0.5+'px';
+    })
+
+</script>
+</body>
+</html>
